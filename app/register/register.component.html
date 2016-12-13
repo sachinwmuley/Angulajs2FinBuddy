@@ -1,0 +1,33 @@
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Sign up </h1>
+</div>
+
+<!-- Simple Register - START -->
+<form class="col-md-12" (ngSubmit)="registerUser()">
+    {{error}}
+    <div class="form-group">
+        <input type="text" class="form-control input-lg" name="userFirstName" [(ngModel)]="user.userFirstName" placeholder="First name">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control input-lg" name="userLastName" [(ngModel)]="user.userLastName" placeholder="Last name">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control input-lg" name="userAddress" [(ngModel)]="user.userAddress" placeholder="Address">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control input-lg" name="userEmail" [(ngModel)]="user.userEmail" placeholder="E-mail">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control input-lg" name="userPassword" [(ngModel)]="user.userPassword"  placeholder="Password">
+    </div>
+   
+    <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up</button>        
+    </div>
+</form>
+<!-- Simple register - END -->
+
+</div>
